@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <errno.h>
+#include <sys/types.h>
 
 int main(int argc, char *argv[]) {
 
@@ -7,12 +11,18 @@ int main(int argc, char *argv[]) {
 
     // determine number of files
     int fileCount = argc - 1;
-    // use a for loop to create multiple processes
+    int forkPID = 0;
 
     for(int i = 1; i < argc; i++) {
-        //printf("%s\t", argv[i]);
+    // make a fork process using file at index i
+    forkPID = fork();
+    // open the file and count the number of words based on any combination of tabs/spaces
+
+    // print out the processes
 
     }
+
+    // wait for all the processes to finish and then make final print statement
 
     printf("Hello World");
     return 0;
