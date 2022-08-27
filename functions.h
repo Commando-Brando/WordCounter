@@ -1,0 +1,8 @@
+//
+// Created by Branm on 8/27/2022.
+//
+
+#ifndef WORDCOUNTER_FUNCTIONS_H
+#define WORDCOUNTER_FUNCTIONS_H
+
+#endif //WORDCOUNTER_FUNCTIONS_H
